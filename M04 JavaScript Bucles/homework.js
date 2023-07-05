@@ -20,7 +20,7 @@ function mayoriaDeEdad(edad) {
    // Caso contrario: "Not allowed".
    // Tu código:
 if (edad >= 18){
-   return ('Allowed')
+   return ('Allowed');
 } else {
    return ('Not allowed')
 }
@@ -40,16 +40,16 @@ function conection(status) {
    // } else {
    //    return ('Offline');
    // }
-   switch (status){
-      case 1:
-         return ('Online')
-         break;
-      case 2:
-         return ('Away')
-         break;
-      default:
-         return ('Offline')
-   }
+  switch (status){
+   case 1:
+      return ('Online');
+      break;
+   case 2:
+      return ('Away');
+      break;
+   default:
+      return ('Offline');
+  }
 }
 
 function saludo(idioma) {
@@ -70,13 +70,13 @@ function saludo(idioma) {
    // }
 switch (idioma){
    case 'aleman':
-      return ('Guten Tag!')
+      return ('Guten Tag!');
       break;
    case 'mandarin':
-      return ('Ni Hao!')
+      return ('Ni Hao!');
       break;
    case 'ingles':
-      return ('Hello!')
+      return ('Hello!');
       break;
    default:
       return ('Hola!')
@@ -108,11 +108,11 @@ function esDiezOCinco(num) {
    // Retornar true si "num" es 10 o 5.
    // De lo contrario, retornar false.
    // Tu código:
-   if (num === 5 || num === 10){
-      return true;
-   } else {
-      return false;
-   }
+if (num === 5 || num === 10){
+   return true;
+} else {
+   return false;
+}
 }
 
 function estaEnRango(num) {
@@ -146,16 +146,16 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
-   if (num % 3 === 0 && num % 5 === 0){
-      return ('fizzbuzz')
-   }
-   else if (num % 3 === 0){
-      return ('fizz')
-   } else if (num % 5 === 0){
-      return ('buzz')
-   } else {
-      return false;
-   }
+   if (num % 5 === 0 && num % 3 === 0){
+      return ('fizzbuzz');
+     }
+   else if (num % 3 === 0 ){
+   return ('fizz');
+  } else if (num % 5 === 0){
+   return ('buzz');
+  }  else {
+   return false;
+  }
    // switch (num){
    //    case num % 3 === 0:
    //       return ('fizz')
@@ -179,12 +179,12 @@ function operadoresLogicos(num1, num2, num3) {
    // Si todos los argumentos son cero, retornar ---> "Error".
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
-if (num1 > num2 && num1 >num3 && num1 > 0){
-   return ('Numero 1 es mayor y positivo')
-} else if (num1 < 0 || num2 < 0 || num3 < 0){
-   return ('Hay negativos')
-} else if (num3 > num1 && num3 > num2){
-   return (num3 + 1)
+if (num1 > num2 && num1 > num3 && num1 > 0){
+   return ('Numero 1 es mayor y positivo');
+} else if (num1 < 0 || num2 < 0 || num3 <0){
+   return ('Hay negativos');
+} else if (num3 > num1 && num3 > num1){
+   return num3 + 1;
 } else if (num1 === 0 && num2 === 0 && num3 === 0){
    return ('Error')
 } else {
@@ -201,7 +201,7 @@ function esPrimo(num) {
    // Tu código:
 if (num < 2){
    return false;
-} for (var i = 2 ; i < num; i++){
+} for (var i = 2; i < num; i++){
    if (num % i === 0){
       return false;
    }
@@ -223,7 +223,11 @@ function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
-return num.toString().length === 3;
+if (num.toString().length === 3){
+   return true;
+} else {
+   return false;
+}
 }
 
 function doWhile(num) {
@@ -231,13 +235,13 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-   var i = 0
+   var i = 0;
    do {
-      num += 5;
+      num = num + 5;
       i++;
    } while (i < 8)
-   return num; 
-} 
+      return num;
+}
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
