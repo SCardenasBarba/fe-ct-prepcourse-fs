@@ -40,16 +40,16 @@ function conection(status) {
    // } else {
    //    return ('Offline');
    // }
-  switch (status){
+switch (status){
    case 1:
-      return ('Online');
+      return 'Online';
       break;
    case 2:
-      return ('Away');
+      return 'Away';
       break;
    default:
-      return ('Offline');
-  }
+      return 'Offline'
+}
 }
 
 function saludo(idioma) {
@@ -97,10 +97,10 @@ switch (color){
    case 'red':
    case 'green':
    case 'orange':
-      return ('This is ' + color)
+      return ('This is ' + color);
       break;
    default:
-      return ('Color not found')
+      return ('Color not found');
 }
 }
 
@@ -146,16 +146,17 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
-   if (num % 5 === 0 && num % 3 === 0){
+if (num % 3 === 0 && num % 5 === 0){
       return ('fizzbuzz');
-     }
-   else if (num % 3 === 0 ){
+    }
+   else if (num % 3 === 0){
    return ('fizz');
-  } else if (num % 5 === 0){
+} else if (num % 5 === 0){
    return ('buzz');
-  }  else {
+} else {
    return false;
-  }
+}
+} 
    // switch (num){
    //    case num % 3 === 0:
    //       return ('fizz')
@@ -169,7 +170,6 @@ function fizzBuzz(num) {
    //    default:
    //       return false;
    // }
-}
 
 function operadoresLogicos(num1, num2, num3) {
    // La función recibe tres números distintos.
@@ -181,12 +181,12 @@ function operadoresLogicos(num1, num2, num3) {
    // Tu código:
 if (num1 > num2 && num1 > num3 && num1 > 0){
    return ('Numero 1 es mayor y positivo');
-} else if (num1 < 0 || num2 < 0 || num3 <0){
+} else if (num1 < 0 || num2 < 0 || num3 < 0){
    return ('Hay negativos');
-} else if (num3 > num1 && num3 > num1){
-   return num3 + 1;
+} else if (num3 > num1 && num3 > num2){
+   return (num3 + 1)
 } else if (num1 === 0 && num2 === 0 && num3 === 0){
-   return ('Error')
+   return ('Error');
 } else {
    return false;
 }
@@ -206,6 +206,7 @@ if (num < 2){
       return false;
    }
 } return true;
+   
 }
 
 function esVerdadero(valor) {
@@ -223,7 +224,7 @@ function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
-if (num.toString().length === 3){
+if (num.toString().length === 3 ){
    return true;
 } else {
    return false;
@@ -235,12 +236,14 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-   var i = 0;
-   do {
-      num = num + 5;
-      i++;
-   } while (i < 8)
-      return num;
+var i = 0;
+
+do {
+   num = num + 5;
+   i++;
+} while (i < 8){
+   return num;
+}
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
