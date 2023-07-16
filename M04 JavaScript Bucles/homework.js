@@ -236,14 +236,15 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-var i = 0;
+var contador = 8;
+var resultado = 0;
 
 do {
-   num = num + 5;
-   i++;
-} while (i < 8){
-   return num;
-}
+   resultado = resultado + 5;
+   contador = contador - 1;
+} while(contador !== 0)
+
+return num + resultado;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
